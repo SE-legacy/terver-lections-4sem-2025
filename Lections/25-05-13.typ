@@ -201,4 +201,4 @@ phi(t) = limits(integral)_(- infinity)^infinity e^(i t x) f(x) d x, #[ для а
 $
 
 $f(x)$ --- функция плотности
-*Пример:* // HACK: которого нет
+*Пример:* //которого нет

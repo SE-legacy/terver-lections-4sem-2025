@@ -66,7 +66,7 @@ $w in A$ --- $omega$ благоприятствует $A$.
 
 / Противоположное событие $overline(A)$: $overline(A) = { w in.not A }$
 
-*Определение*. ] $A, B subset Omega$. Тогда $C = A union B$ --- сумма событи $A$ И $B$.
+*Определение*. $A, B subset Omega$. Тогда $C = A union B$ --- сумма событи $A$ И $B$.
 
 / Произведение: $D = A sect B$
 
