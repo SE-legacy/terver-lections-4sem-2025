@@ -38,7 +38,7 @@ $ xi (omega_2) = xi (o; p) = 1 $
 $ xi (omega_3) = xi (p; o) = 1 $
 $ xi (omega_4) = xi (p; p) = 0 $
 
-// FIX:  #image("imgs/021.png")
+image("imgs/021.png")
 
 $ P{ xi = 2 } = P {(o, o)} = 1/4 $
 $ P{ xi = 1 } = P {(o, p) union (p, 0)} = 1/4 + 1/4 = 1/2 $
@@ -118,7 +118,7 @@ $
 $ => limits(lim)_(x -> + infinity) F(x) = P{Omega} = 1$
 
 $=>#[доказано @l6:eq3] $
-// FIX:  #image("imgs/022.png")
+image("imgs/022.png")
 
 === Пример построения функции распределения
 

@@ -1,5 +1,0 @@
-#include "Lections/250211.typ"
-#include "Lections/250218_2.typ"
-#include "Lections/25_02.typ"
-#include "Lections/04_03.typ"
-#include "Lections/11_03.typ"

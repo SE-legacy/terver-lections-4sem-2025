@@ -56,7 +56,7 @@ $
 	$= |e^(i z) - 1| = | cos z + i sin z - 1| = | overbrace(cos z - 1, R e z) + i overbrace(sin z, I m z) | =\
 	= sqrt((cos z - 1)^2 + sin^2 z) = sqrt(cos^2 z - 2 cos z + 1 sin^2 z) = sqrt(2 - 2 cos z) = sqrt(2 overbrace((1 - cos z),0 lt.eq dot lt.eq 2)) lt.eq 2$
 
-	// FIX: рисунок
+	// TODO: рисунок
 	$
 	= overbrace(limits(integral)_(|x| lt.eq A) |e^(i (t_1 - t_2)x) - 1| d F(x), I_1) + overbrace( limits(integral)_(|x| gt A) |e^(i (t_1 - t_2)x) - 1| d F(x), I_2) 
 	$
