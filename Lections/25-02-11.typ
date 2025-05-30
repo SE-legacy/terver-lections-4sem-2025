@@ -68,30 +68,30 @@ $w in A$ --- $omega$ благоприятствует $A$.
 
 *Определение*. ] $A, B subset Omega$. Тогда $C = A union B$ --- сумма событи $A$ И $B$.
 
-/ Произведение: $D = A sect B$
+/ Произведение: $D = A inter B$
 
 #image("imgs/004.png")
 
 Замечание:
 - $A union Omega = Omega$
-- $A sect Omega = A$
+- $A inter Omega = A$
 - $A union emptyset = A$
-- $A sect emptyset = emptyset$
+- $A inter emptyset = emptyset$
 - $A union overline(A) = Omega$
-- $A sect overline(A) = emptyset$
+- $A inter overline(A) = emptyset$
 
 У нас есть три вида НЕ-событий:
 - Невероятные
 - Несовместные
 - Некакиетотам
 
-/ Несовместные события: $A$ и $B$: $A sect B = emptyset$ (не существует ни одного элементарного исхода $w$, которому благоприятствуют $A$ и $B$ одновременно)
+/ Несовместные события: $A$ и $B$: $A inter B = emptyset$ (не существует ни одного элементарного исхода $w$, которому благоприятствуют $A$ и $B$ одновременно)
 
 / Полная группа событий: последовательность событий ${A_i}_(i = 1)^infinity: limits(union)_(i= 1)^infinity A_i = Omega$ (каждый эл. исход $in$ хотя бы одному $A_i$). См. рисунок:
 
 #image("imgs/005.png")
 
-/ Полная группа попарно несовместных событий: ${A_i}_(i = 1)^infinity : A_i sect A_j = emptyset; limits(union)_9i = 1) A_i = Omega$ (каждый эл. исход $in$ ровно одному из $A_i$)
+/ Полная группа попарно несовместных событий: ${A_i}_(i = 1)^infinity : A_i inter A_j = emptyset; limits(union)_9i = 1) A_i = Omega$ (каждый эл. исход $in$ ровно одному из $A_i$)
 
 #image("imgs/006.png")
 

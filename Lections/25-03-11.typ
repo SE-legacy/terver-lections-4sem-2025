@@ -137,7 +137,7 @@ $ m(P) gt.eq 0 space forall P $
 
 / Теорема: Сумма, пересечение, разность и отрицание разных элементарных множеств есть элементарное множество.
 
-$ union, sect, \\, not #[ ---  разных элементарных множеств есть элементарное множество] $
+$ union, inter, \\, not #[ ---  разных элементарных множеств есть элементарное множество] $
 
 / Теорема: Если множество $A$ содержиться или совпадает с суммой $A_n$, т.е. $A subset.eq union A_n$, то $m'(A) lt.eq limits(sum)_k m'(A_k)$
 
@@ -181,7 +181,7 @@ $ E backslash A subset limits(union.big.sq)_j Q_j $
 #set math.cases(reverse: true)
 $ 
 cases(
-    (union.big.sq P_k) sect (union.big.sq Q_j) eq.not emptyset,
+    (union.big.sq P_k) inter (union.big.sq Q_j) eq.not emptyset,
 	(union.big.sq P_k) union (union.big.sq Q_j) eq.not emptyset 
 ) => (union.big.sq P_k) space и space (union.big.sq Q_j) #[--- пересекающиеся]
 $
@@ -199,7 +199,7 @@ $ mu^* (A) + mu \* (E backslash A) >= 1 $
 
 $ mu \* (A) gt.eq 1 - mu \* (E backslash A) = mu \* (A) $
 
-*Замечание*: $forall {P_k}, {Q_j} space mu \* ((union.big.sq P_k) sect (union.big.sq Q_j)) gt.eq epsilon$
+*Замечание*: $forall {P_k}, {Q_j} space mu \* ((union.big.sq P_k) inter (union.big.sq Q_j)) gt.eq epsilon$
 
 / Определение: Мерой Лебега множества $A subset E = [0, 1] times [0, 1]$ называется $mu (A)$ , если $mu_\* (A) = mu \* (A) = mu (A) $
 
@@ -233,7 +233,7 @@ $ mu (A) #[ --- функция множеств с областью опреде
 // HACK:
 // $ альфа бета гамма ' $ // чекайте
 // работает
-4. $ union, sect$ измеримых по Лебегу конченого количества моножеств также измеримо по Лебегу.
+4. $ union, inter$ измеримых по Лебегу конченого количества моножеств также измеримо по Лебегу.
 
 5. Непрерывность меры Лебега // Le Fishe
 
@@ -259,7 +259,7 @@ $ mu (union.big.sq A_n) = sum mu (A_n) $
 
 1. $emptyset in S$
 
-2. Если $A, B in S$, то $A sect B in S$,
+2. Если $A, B in S$, то $A inter B in S$,
 
 3. Если $A, B$ такие, что $A subset B$, то найдётся ${B_i}^n_(i = 1) $ 
 

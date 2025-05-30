@@ -84,7 +84,7 @@ $ P(B) = P (cal(A) union.sq (B\\ cal(A))) = underbrace(P(cal(A)), gt.eq 0) + und
 Пусть $A, B in cal(F)$
 Тогда вероятность суммы этих событий равна сумме вероятностей минус вероятность произведения: 
 
-$ P(cal(A) union B) = P(cal(A)) + P(B) - P(cal(A) sect B) $
+$ P(cal(A) union B) = P(cal(A)) + P(B) - P(cal(A) inter B) $
 
 Доказательство
 
@@ -94,8 +94,8 @@ $ P(cal(A) union B) = P(cal(A)) + P(B) - P(cal(A) sect B) $
 
 Тогда 
 $
-    P(A union B) = P(A union.sq (B \\ (A sect B)) = P(A) + P( B \\ A B) =\
-    = P(A) + P(B \\ A B) =  P(A) + P(B) - P(A sect B))
+    P(A union B) = P(A union.sq (B \\ (A inter B)) = P(A) + P( B \\ A B) =\
+    = P(A) + P(B \\ A B) =  P(A) + P(B) - P(A inter B))
 $
 // FIX: cal(A) в большей части мест походу надо поменять на A
 
@@ -124,7 +124,7 @@ $ {A_i}^infinity_(i = 1) $
 Т.е.
 $ A_i subset "l" A_(i + 1) $
 то
-$ P(limits(sect)^infinity_(i = 1) A_i) = limits(lim)_(n -> infinity) P (A_n) $
+$ P(limits(inter)^infinity_(i = 1) A_i) = limits(lim)_(n -> infinity) P (A_n) $
 Доказательство
 
 Представим событие $cal(A) = limits(union)_(i = 1)^infinity cal(A)_i $ в виде суммы несовместных событий:
@@ -177,7 +177,7 @@ $ P(A|C) = 1/3 $
 
 $ A, B $ -- зависимые, $ A, C $ -- независимые.
 
-/ Условная вероятность: Пусть $A, B in cal(F)$; $P(B) gt 0:$ Условной вероятностью события $A$, при условии, что настпуило событие $B$, называется число $P(A|B) = P(A sect B )/P(B) $
+/ Условная вероятность: Пусть $A, B in cal(F)$; $P(B) gt 0:$ Условной вероятностью события $A$, при условии, что настпуило событие $B$, называется число $P(A|B) = P(A inter B )/P(B) $
 
 === Свойства условной вероятности:
 + $P(B|B) = 1 $
@@ -195,12 +195,12 @@ $ P(limits(union.sq)_(i = 1)^infinity A_i | B) = limits(sum)_(i = 1)^infinity P(
 Пусть
 $ A, B in cal(F); space P(B) gt 0 $
 Тогда
-$ P(A sect B) = P(B) dot P(A|B) $
+$ P(A inter B) = P(B) dot P(A|B) $
 Пусть
-$ A_1,A_2,A_3 in cal(F); space  P(A_1) > 0$ $P(A_1 sect A_2) > 0 $
+$ A_1,A_2,A_3 in cal(F); space  P(A_1) > 0$ $P(A_1 inter A_2) > 0 $
 Тогда
 
-$ P(A_1 sect A_2 sect A_3) = P(A_1) P(A_2|A_1) dot P(A_3 | A_1 subset A_2) $
+$ P(A_1 inter A_2 inter A_3) = P(A_1) P(A_2|A_1) dot P(A_3 | A_1 subset A_2) $
 
 = Независимость событий ( заголовок на следующую лекцию )
 

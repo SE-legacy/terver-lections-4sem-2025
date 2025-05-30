@@ -55,14 +55,14 @@ $ cal(F) = {Omega, emptyset, {omega_1} {omega_2},...,{omega_6}, {omega_1, omega_
 / Конечно-аддитивной вероятностной мерой: над множеством $Omega$ называется функция множества $Q(A)$ такая что
 1. $Q(Omega)  = 1$ --- нормированность меры
 2. $Q(A) gt.eq 0 space forall A in cal(A)$
-3. $A, B in cal(A) and (A sect B = emptyset) => Q(A union B) = Q(A) + Q(B)$
+3. $A, B in cal(A) and (A inter B = emptyset) => Q(A union B) = Q(A) + Q(B)$
 
 // синтаксис gt.eq ппоходу фанаты bash придумывали
 
 / Счётно-аддитивной вероятностной мерой: над множеством $Omega$ называется $P(A)$ такая, что:
 1. $P(Omega) = 1$ 
 2. $P(A) gt.eq 0 space forall A in cal(F)$
-4. ${A_i}_(i = 1)^infinity in cal(F), A_i sect A_j  = emptyset  forall i != j$
+4. ${A_i}_(i = 1)^infinity in cal(F), A_i inter A_j  = emptyset  forall i != j$
 
 то $P(limits(union)^(infinity)_(i = 1)) =limits(sum)^(infinity)_(i = 1) P (A_i)$
 

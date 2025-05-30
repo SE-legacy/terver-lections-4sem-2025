@@ -4,7 +4,7 @@
 
 Пусть $(Omega, cal(F), P)$ --- вероятностное пространство.
 
-*Определение*. Случайные события $A$ и $B$ называются *независимыми*, если $P(A sect B) = P(A) P(B)$. // разве не sect?
+*Определение*. Случайные события $A$ и $B$ называются *независимыми*, если $P(A inter B) = P(A) P(B)$. // разве не inter?
 
 Таким образом, знание вероятностей по отдельности не позволяет вычислить вероятность их произведения.
 
@@ -30,14 +30,14 @@ _Нам нужно отключить жизненное понимание не
 
 Необх.: Пусть $A, B$ независимы.
 
-Тогда $ P(A | B) = (P(A sect B))/(P(B)) = (P(A) dot P(B))/(P(B)) = P(A) $
+Тогда $ P(A | B) = (P(A inter B))/(P(B)) = (P(A) dot P(B))/(P(B)) = P(A) $
 
 Пусть верно, что $P(A | B) = P(A)$. Мы знаем, что это верно, но пока не знаем ничего о (не)зависимости событий. Поэтому по теореме умножения вероятностей
 
 // NOTE: мы имеем теорму
 
 
-Тогда $ P(A sect B) = P(B) dot P(A | B) = P(B) dot P(A) => #[выполнено опредееление \ независимости собтыий] $
+Тогда $ P(A inter B) = P(B) dot P(A | B) = P(B) dot P(A) => #[выполнено опредееление \ независимости собтыий] $
 
 
 === Теорема (о независимости противоположных событий)
@@ -52,7 +52,7 @@ _Нам нужно отключить жизненное понимание не
 #image("imgs/007.png")
 
 $
-  P(A sect overline(B)) = P(A \\ (A B)) = P(A) - P(A sect B) =\
+  P(A inter overline(B)) = P(A \\ (A B)) = P(A) - P(A inter B) =\
   = P(A) - P(A) dot P(B) = P(A) (1 - P(B)) = P(A) dot P(overline(B))
 $
 
@@ -60,7 +60,7 @@ $ overline(A) and overline(B) #[ --- самостаятельно] $
 
 Рассмотрим ещё одно определение, связанное с независимостю. Дело в том, что события наступают не в парах.
 
-/ Опр: Случайные события $A_1, A_2, dots, A_n$ называются независимы в совокупности, если $forall 2 lt.eq k lt.eq n$, $P (limits(sect)_(j = 1)^k A_(i j)) = limits(sect.sq)_(j = 1)^k P(A_(i j))$
+/ Опр: Случайные события $A_1, A_2, dots, A_n$ называются независимы в совокупности, если $forall 2 lt.eq k lt.eq n$, $P (limits(inter)_(j = 1)^k A_(i j)) = limits(inter.sq)_(j = 1)^k P(A_(i j))$
 
 // NOTE: A_(i j) или A_(j)
 
@@ -88,14 +88,14 @@ $ overline(A) and overline(B) #[ --- самостаятельно] $
 Пусть $k = 2$
 
 $ P(K) = P(C) = P("З") = 2/4 = 1/2 $
-$ P(K sect C) = P(K sect "З") = P(C sect "З") = 1/4 $
+$ P(K inter C) = P(K inter "З") = P(C inter "З") = 1/4 $
 
 Для каждой пары
-$ underbrace(1/2, P(A)) dot underbrace(1/2, P(B)) = underbrace(1/4, P(A sect B)) #[ это верно] => #[ независимы попарно] $
+$ underbrace(1/2, P(A)) dot underbrace(1/2, P(B)) = underbrace(1/4, P(A inter B)) #[ это верно] => #[ независимы попарно] $
 
 $k = 3$
 
-$ P(K sect C sect "З") = 1/4 $
+$ P(K inter C inter "З") = 1/4 $
 
 $ P(K) dot P(C) dot P("З") = 1/2 dot 1/2 dot 1/2 = 1/8 $
 
@@ -136,8 +136,8 @@ _$i$ --- мнимая единица, а не счётчик цикла_
 Представим $A$ как
 
 $
-  P(A) = P(A sect Omega) = P(A sect (limits(union.sq)_(i = 1)^infinity A_i))=\
-  = P(limits(union.sq)_(i = 1)^infinity A sect A_i) = limits(sum)_(i = 1)^infinity P(A sect A_i) =\
+  P(A) = P(A inter Omega) = P(A inter (limits(union.sq)_(i = 1)^infinity A_i))=\
+  = P(limits(union.sq)_(i = 1)^infinity A inter A_i) = limits(sum)_(i = 1)^infinity P(A inter A_i) =\
   = limits(sum)_(i = 1)^infinity P(A_i) dot P(A | A_i)
 $
 
@@ -153,8 +153,8 @@ $
 *Док-во:*
 $
 	cases(
-		P(A sect A_i) = P(A_i) dot P(A | A_i),
-		P(A sect A_i) = P(A) dot P(A_i | A)
+		P(A inter A_i) = P(A_i) dot P(A | A_i),
+		P(A inter A_i) = P(A) dot P(A_i | A)
 	)
 $
 
