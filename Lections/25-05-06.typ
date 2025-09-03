@@ -106,7 +106,6 @@ $
 alpha_(i j) = M(xi - M xi)^i (eta - M eta)^j; i + j = k
 $
 
-
 $
 M|xi| lt + infinity\
 M|eta| lt + infinity\

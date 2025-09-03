@@ -67,15 +67,13 @@ P {|xi - a| lt.eq 3 sigma} = P {- 3 sigma lt xi - a lt 3 sigma} = P {-3 lt (xi -
 = Phi(3) + Phi(3) = 2 Phi(3) = 0.9973 space space (99.73% #[--- в процентах])
 $
 
-
 == Некоторые распределения (\*) связанные с $N (a, sigma^2)$
 
 Пусть $xi_1, xi_2, dots xi_n$ --- независимые случайные велечины; $xi ~ N(0, 1)$
 
 === Распределение хи-квадрат
 
-$ chi^2 (n) = xi_1^2 + dots + xi_n^2 $ // TODO: Здесь какая-то старнная chi большая вместо "X"
-
+$ chi^2 (n) = xi_1^2 + dots + xi_n^2 $ 
 
 $
 f(x) = cases(
@@ -83,7 +81,6 @@ f(x) = cases(
 	0\, x lt 0
 )
 $
-
 
 $
 Gamma(n/2)
@@ -97,7 +94,7 @@ $
 Распределение Стюдента
 
 $
-t(n) = (eta)/(sqrt((xi_1^2 + dots + xi_n^2)/n)) = (eta dot sqrt(n))/(sqrt(chi^2 (n)))// TODO: Здесь какая-то старнная chi большая вместо "X"
+t(n) = (eta)/(sqrt((xi_1^2 + dots + xi_n^2)/n)) = (eta dot sqrt(n))/(sqrt(chi^2 (n)))
 $
 
 == Независимые случайные величины и случайные векторы
@@ -168,8 +165,6 @@ $
 
 $ (xi, eta) #[ задается вероятностями:] $
 $ p_(i j) = P{xi = x_i, eta = y_j} $
-
-// TODO: У Темы есть все рисунки
 
 $
 p_(i j) > 0 space space limits(sum)_(i = 1)^(infinity) limits(sum)_(j = 1)^(infinity) p_(i j) = 1

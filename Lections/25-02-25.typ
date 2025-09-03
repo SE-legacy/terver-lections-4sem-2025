@@ -97,7 +97,6 @@ $
     P(A union B) = P(A union.sq (B \\ (A inter B)) = P(A) + P( B \\ A B) =\
     = P(A) + P(B \\ A B) =  P(A) + P(B) - P(A inter B))
 $
-// TODO: cal(A) в большей части мест походу надо поменять на A
 
 == Свойство (4): Сравнение
 
@@ -203,19 +202,3 @@ $ A_1,A_2,A_3 in cal(F); space  P(A_1) > 0$ $P(A_1 inter A_2) > 0 $
 $ P(A_1 inter A_2 inter A_3) = P(A_1) P(A_2|A_1) dot P(A_3 | A_1 subset A_2) $
 
 = Независимость событий ( заголовок на следующую лекцию )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -39,17 +39,17 @@ $
 F_(xi eta) (x, y) =  F_xi (x) dot F_eta (y)
 $
 
-Найдем производную $F_(xi eta) (x, y)$ // TODO: проверить
+Найдем производную $F_(xi eta) (x, y)$
 
 $
 f_(xi eta) (x, y) =^#[п. в.] (nu^2 F(x, y))/(nu x nu y) =^#[п.в.] f(x, y)
-$ // TODO: бляяяяяяяяяяяя я не успел дописать
+$ // TODO: не успел дописать
 
 Достаточность
 $
 F_(xi eta) = limits(integral)_(- infinity)^x limits(integral)_(- infinity)^y f_(xi eta) (u, v) d u d v =\
 = limits(integral)_(- infinity)^x limits(integral)_(- infinity)^y f_xi (u) f(eta) d u d v
-$ // TODO: проверить
+$
 
 = Глава 3. Числовые характеристики случайной величины
 
@@ -147,4 +147,3 @@ gt.eq limits(integral)^infinity_(epsilon) g(x) d F(x) gt.eq g(epsilon) limits(in
 = g(epsilon) (limits(lim)_(x -> + infinity) F(x) - F(epsilon))= g(epsilon) (1 - P{xi lt epsilon}) = \
 = g(epsilon) P{xi gt.eq epsilon} => P{xi gt.eq epsilon} lt.eq (M g(xi))/(g(epsilon))
 $
-

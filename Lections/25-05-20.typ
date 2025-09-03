@@ -1,5 +1,3 @@
-// я вам ща въебу
-// СВО
 #set math.equation(numbering: "1.")
 = Лекция
 == Пример
@@ -11,13 +9,11 @@ $
 
 $
 phi (t) = M e^(i t xi) = limits(integral)^(infinity)_(-infinity) e^(i t x) dot 1/sqrt(2 pi) e^(- (x^2)/2) d x = 1/(sqrt(2 pi)) limits(integral)_(- infinity)^(infinity) e^(- 1/2 (x^2 - 2 i t x)) d x = (x - i t)
-$ // TODO: бля не успел дописать 
+$ // TODO: не успел дописать 
 
-// я правую доску пишу если что
-// ок я левую
 
 $
-= 1/sqrt(2 pi) limits(integral)_(-infinity)^infinity e^(- frac((x - i t)^2, 2) + ((i t)^2) / 2) dif x = 1/sqrt(2 pi) dot e^(-t^2/2) limits(integral)_(-infinity)^infinity e^(-((x - i t)^2) / 2) dif x = e^(-t^2 / 2) // TODO: бляяяяяяяяя
+= 1/sqrt(2 pi) limits(integral)_(-infinity)^infinity e^(- frac((x - i t)^2, 2) + ((i t)^2) / 2) dif x = 1/sqrt(2 pi) dot e^(-t^2/2) limits(integral)_(-infinity)^infinity e^(-((x - i t)^2) / 2) dif x = e^(-t^2 / 2) // TODO: дописатть
 $
 
 Таким образом, $xi ~ N(0, 1)$ \
@@ -34,9 +30,6 @@ $
 
 	$M e^(- i t xi) = M (cos(t xi) - i sin (t xi)) = overbrace(M cos (t xi), R e z) - i overbrace(M sin (t xi), I m z) =\
 	= overline(M cos t xi + i M sin t xi) = overline(M (cos t xi + i sin t xi)) = overline(phi (t))$
-// HACK: пиздец ты темы свапаешь))))
-// переобуваюсь на лету
-
 
 3. Характеристическая функция --- равномерно непрерывная функция.
 
@@ -51,8 +44,6 @@ $
 
 	_Примечание: $e^(t_1) - e^(t_2) = e^(t_2) (e^(t_1 - t_2) - 1)$_
 
-	// тут дальше продолжение с левой доски
-
 	$= |e^(i z) - 1| = | cos z + i sin z - 1| = | overbrace(cos z - 1, R e z) + i overbrace(sin z, I m z) | =\
 	= sqrt((cos z - 1)^2 + sin^2 z) = sqrt(cos^2 z - 2 cos z + 1 sin^2 z) = sqrt(2 - 2 cos z) = sqrt(2 overbrace((1 - cos z),0 lt.eq dot lt.eq 2)) lt.eq 2$
 
@@ -62,9 +53,6 @@ $
 	$
 	@l0520:eq1 $ = $
 
-	// HACK: Если у тебя есть на ноуте pdf-ка с минимумом кинь ее по scp на пятой вкладке tmux-а, пж
-	// ничего не понял, причём тут tmux, закинул main.pdf в /tmp
-	// спасибо
 	$
 		I_2 <= limits(integral)_(| x | > A) 2 dif F(x) = 2(limits(integral)_(-infinity)^(-A) dif F(x) + limits(integral)_A^(+infinity) dif F(x)) = \
 		= 2 [ F(-A) - limits(lim)_(x -> +infinity) F(x) + (limits(lim)_(x -> +infinity)) F(x) - F(A))] = \
@@ -80,7 +68,7 @@ $
 		= epsilon/2 limits(integral)_(|x| <= A) dif F(x) = epsilon / 2 P{|xi| <= A} <= epsilon/2 dot 1 = epsilon/2
 	$
 
-	Таким образом $forall epsilon > 0 space exists delta = delta(epsilon)$ такой что $forall |t_1 - t_2| < delta$ // TODO: ну всё ну блять ну пиздец
+	Таким образом $forall epsilon > 0 space exists delta = delta(epsilon)$ такой что $forall |t_1 - t_2| < delta$
 
 4. Если $xi_1, xi_2, dots, xi_n$ --- независ. случ. вел., то характеристическая функция $eta= xi_1 + xi_2 + dots + xi_n$ равна
 
@@ -113,5 +101,3 @@ $
 	$
 
 Тогда для $xi ~ N(a; sigma)$ по свойствам $xi = sigma xi_0 + a$ $=>$ по 6 свойству $phi_xi (t) e^(i t a) dot phi_xi_0 (sigma t) = e^(i t a) dot e^(-(sigma^2 t^2) / 2) = e^(-(sigma^2 t^2)/2) + i t a$
-
-// ДА пиздец блять

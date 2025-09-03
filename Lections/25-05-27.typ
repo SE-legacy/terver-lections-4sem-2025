@@ -94,7 +94,7 @@ $
 F(b) - F(a) = 1/(2 pi) limits(lim)_(c-> + infinity) limits(integral)_(-c)^c (e^(i t a) - e^(i t b))/(i t) phi(t) d t
 $
 
-== Теорема непрерывности (т. Леви) // GOTHAMCHESSS??????
+== Теорема непрерывности (т. Леви)
 Пусть ${F_n (x)}$ --- последовательность функций распределения, а ${phi_n (t)}$ --- полследовательность соответствующих характеристических функци
 
 Если $F_n (x) ->^omega F(x)$, то $exists : phi(t) phi(0) = 1$ и $limits(lim)_(n -> + infinity) phi_n (t) = phi(t) $
@@ -102,7 +102,6 @@ $
 $F_n (x) ->^omega F(x)$ --- слабая сходимость (сходимость в т. непрерывности)
 
 Если $exists limits(lim)_(n -> infinity) phi_n(t) = phi(t)$, такая что $phi(t) = limits(integral)_(- infinity)^infinity e^(i t x)d F(x)$. Тогда $F_n(x) ->^omega F(x)$
-
 
 == Как проходит зачет
 Первая половина приходит к 10, вторая к 10:45--11
